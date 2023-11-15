@@ -8,7 +8,7 @@ This package contains two functions:
                 and their Aquamaps probabilities for that location
 - plot_shapes() - a helper function to plot the probabilities. Looks like this:
 
-![an example map with Probabilities]('img/example.png')
+![an example map with Probabilities](img/example.png)
 
 
 # Installation
