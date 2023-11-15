@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+
+import(aquamapsdata)
+import(phyloseq)
+import(readr)
+import(dbplyr)
+import(dplyr)
+import(DBI)
+import(stringr)
+import(tidyr)
+import(sf)

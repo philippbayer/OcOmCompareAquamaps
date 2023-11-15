@@ -1,0 +1,13 @@
+Package: OcOmCompareAquamaps
+Type: Package
+Title: Takes ASV fish sightings data, adds Aquamaps species probabilities
+Version: 0.1.0
+Author: Philipp Bayer
+Maintainer: Philipp Bayer <pbayer@minderoo.org>
+Description: Given a RDS file from the OceanOmics amplicon pipeline,
+    pull out the sighted species probabilities from Aquamaps,
+    then return a new table with these Probabilities added (or NA).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: aquamapsdata, phyloseq, readr, dbplyr, DBI, stringr, tidyr, sf, rappdirs, RSQLite, ggplot2

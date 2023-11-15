@@ -1,0 +1,76 @@
+* using log directory ‘/home/pbayer/Data/OcOmCompareAquamaps/..Rcheck’
+* using R version 4.3.2 (2023-10-31)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* R was compiled by
+    gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+    GNU Fortran (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+* running under: Ubuntu 20.04.6 LTS
+* using session charset: UTF-8
+* checking for file ‘./DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘OcOmCompareAquamaps’ version ‘0.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .gitignore
+  ..Rcheck
+  .Rproj.user
+  .git
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘OcOmCompareAquamaps’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: replacing previous import ‘dbplyr::ident’ by ‘dplyr::ident’ when loading ‘OcOmCompareAquamaps’
+  Warning: replacing previous import ‘dbplyr::sql’ by ‘dplyr::sql’ when loading ‘OcOmCompareAquamaps’
+See ‘/home/pbayer/Data/OcOmCompareAquamaps/..Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Description field: should contain one or more complete sentences.
+License components which are templates and need '+ file LICENSE':
+  MIT
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directory with the name of a check directory:
+  ./..Rcheck
+Most likely, these were included erroneously.
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... WARNING
+Loading required package: methods
+Error: package or namespace load failed for ‘OcOmCompareAquamaps’:
+ .onAttach failed in attachNamespace() for 'OcOmCompareAquamaps', details:
+  call: packageVersion(pkgname)
+  error: could not find function "packageVersion"
+In addition: Warning messages:
+1: replacing previous import ‘dbplyr::ident’ by ‘dplyr::ident’ when loading ‘OcOmCompareAquamaps’ 
+2: replacing previous import ‘dbplyr::sql’ by ‘dplyr::sql’ when loading ‘OcOmCompareAquamaps’ 
+Execution halted
+
+It looks like this package (or one of its dependent packages) has an
+unstated dependence on a standard package.  All dependencies must be
+declared in DESCRIPTION.
+See section ‘The DESCRIPTION file’ in the ‘Writing R Extensions’
+manual.
+* checking whether the package can be unloaded cleanly ... WARNING
+Error: package or namespace load failed for ‘OcOmCompareAquamaps’:
+ .onAttach failed in attachNamespace() for 'OcOmCompareAquamaps', details:
+  call: packageVersion(pkgname)
+  error: could not find function "packageVersion"
+In addition: Warning messages:
+1: replacing previous import ‘dbplyr::ident’ by ‘dplyr::ident’ when loading ‘OcOmCompareAquamaps’ 
+2: replacing previous import ‘dbplyr::sql’ by ‘dplyr::sql’ when loading ‘OcOmCompareAquamaps’ 
+Execution halted
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
