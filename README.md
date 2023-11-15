@@ -1,4 +1,4 @@
-#OcOm CompareAquamaps
+# OcOm CompareAquamaps
 
 This package contains two functions:
 
@@ -8,7 +8,7 @@ This package contains two functions:
                 and their Aquamaps probabilities for that location
 - plot_shapes() - a helper function to plot the probabilities. Looks like this:
 
-![]('img/example.png')
+![an example map with Probabilities]('img/example.png')
 
 
 # Installation
