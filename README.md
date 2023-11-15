@@ -35,19 +35,24 @@ It's a 12GB file so the download takes a little while.
 
 Then do whatever you want with the resulting data.
 
-The data looks like this:
+The data looks like this for a few replicates across two locations and two ASVs:
 
 |ASV     |species                  |Location           | Reads| latitude_dd| longitude_dd|SpeciesID |CsquareCode | NLimit| Slimit| WLimit| ELimit| Probability|Probability_class |
 |:-------|:------------------------|:------------------|-----:|-----------:|------------:|:---------|:-----------|------:|------:|------:|------:|-----------:|:-----------------|
-|ASV_93  |Ranzania laevis          |V10_CKI_N_H_5_12_2 | 23004|   -19.23755|    100.07472|Fis-23758 |3110:390:1  |  -19.0|  -19.5|    100|  100.5|           1|Great (>0.9)      |
-|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_1     |   216|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
-|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_2     |   388|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
-|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_3     |   193|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
-|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_4     |    81|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
-|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_5     |   161|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
+|ASV_93  |Ranzania laevis          |V10_CKI_N_H_5_12_2 | 23004|   -19.23755|    100.07472|Fis-23758 |3110:390:1  |  -19.0|  -19.5|    100|  100.5|           1|Great (>0.99)      |
+|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_1     |   216|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.99)      |
+|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_2     |   388|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.99)      |
+|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_3     |   193|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.99)      |
+|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_4     |    81|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.99)      |
+|ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_5     |   161|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.99)      |
 
+The columns starting from SpeciesID come from `aquamapsdata`. `Probability_class` comes from me and is made up of three bins (OK (>0), Good (>0.5), Great (>0.99).
 
-To plot a plot like above:
+To make a plot like above:
 
     plot_shapes(shp)
-    
+
+# TODO
+
+- Add Reef Life Survey data
+- Find a better name for this package
