@@ -1,12 +1,14 @@
 # OcOm CompareAquamaps
 
+Given a table of amplicon sequence variant (ASV)-based sightings of fish (latitude and longitude), how likely is it that the species is there and it was not a false positive? We can use Aquamaps-based species distribution probabilities to check!
+
 This package contains two functions:
 
 - get_shapes() - given a OceanOmics amplicon pipeline phyloseq object RDS file, 
                 pull out the Aquamaps species probability maps for the sighted species,
-                then returns a table with the ASV-based species sightings, their latitude/longitude,
+                then return a table with the ASV-based species sightings, their latitude/longitude,
                 and their Aquamaps probabilities for that location
-- plot_shapes() - a helper function to plot the probabilities. Looks like this:
+- plot_shapes() - a helper function to plot the probabilities. Looks like this for a transect study with the ASV-reads log in color, and the shapes based on Probability groups:
 
 ![an example map with Probabilities](img/example.png)
 
