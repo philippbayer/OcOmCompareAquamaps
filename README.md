@@ -22,6 +22,13 @@ It *should* be possible to install via remotes::install_github(). HOWEVER, we de
     remotes::install_github('philippbayer/OcOmCompareAquamaps, dependencies = TRUE)
     
     
+Once, you have to download the Aquamapsdata database. The location currently defaults to ~/.config/aquamaps
+
+    library(OcOmCompareAquamaps)
+    download_data()
+    
+It's a 12GB file so the download takes a little while.
+    
 # Usage
 
     shp <- get_shapes('some_file.RDS')
@@ -39,3 +46,8 @@ The data looks like this:
 |ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_4     |    81|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
 |ASV_968 |Bolinichthys photothorax |V10_CKI_U_13_5     |   161|   -18.64562|     99.39633|Fis-28239 |3109:489:3  |  -18.5|  -19.0|     99|   99.5|           1|Great (>0.9)      |
 
+
+To plot a plot like above:
+
+    plot_shapes(shp)
+    

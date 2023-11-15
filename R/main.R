@@ -87,10 +87,10 @@ get_shapes <- function(rds,
 
   # put the two tibbles together and return
   both <- dplyr::bind_rows(missing_asvs, asvs_to_aquamaps_prob)
-  both <- both |> dplyr::mutate(Probability_class = dplyr::case_when(Probability > 0.99 ~ 'Great (>0.9)',
+  both <- both |> dplyr::mutate(Probability_class = dplyr::case_when(Probability > 0.99 ~ 'Great (>0.99)',
                                                        Probability > 0.5 ~ 'Good (>0.5)',
                                                        Probability > 0 ~ 'OK (>0)')) |>
-    dplyr::mutate(Probability_class = factor(Probability_class, levels = c('Great (>0.9)', 'Good (>0.5)', 'OK (>0)')))
+    dplyr::mutate(Probability_class = factor(Probability_class, levels = c('Great (>0.99)', 'Good (>0.5)', 'OK (>0)')))
 
   DBI::dbDisconnect(con)
 

@@ -10,4 +10,16 @@ Description: Given a RDS file from the OceanOmics amplicon pipeline,
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: aquamapsdata, phyloseq, readr, dbplyr, DBI, stringr, tidyr, sf, rappdirs, RSQLite, ggplot2
+Imports: 
+    aquamapsdata,
+    phyloseq,
+    readr,
+    dbplyr,
+    DBI,
+    stringr,
+    tidyr,
+    sf,
+    rappdirs,
+    RSQLite,
+    ggplot2,
+    dplyr
